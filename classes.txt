@@ -1,0 +1,1162 @@
+﻿* Home
+* Docs
+
+
+Events Conditions Sections Effects Expressions Types Structures Functions
+* New
+* Tutorials
+
+
+Text
+* Dev Tools
+
+
+Javadocs
+* GitHub
+* v2.9.5
+Attribute Type Biome Block Block Data Boolean Cat Type Chunk Click Type Color Command Sender Damage Cause Date Difficulty Direction Enchantment Enchantment Offer Enchantment Type Entity Entity Type Entity Type with Amount Experience Firework Effect Firework Type Game Mode Gamerule Gamerule Value Gene Heal Reason Inventory Inventory Action Inventory Close Reasons Inventory Type Item Item Type Living Entity Location Metadata Holder Money Moon Phase Number Object Offline Player Player Potion Effect Potion Effect Type Projectile Quit Reason Region Resource Pack State Server Icon Slot Sound Category Spawn Reason Teleport Cause Text Time Timeperiod Timespan Transform Reason Tree Type Type Vector Visual Effect Weather Type World World Environment
+Types
+
+
+Attribute Type
+🔗
+Type
+
+
+Patterns:
+	* armor, armor toughness, attack damage, attack knockback, attack speed, block break speed, block interaction range, burning time, entity interaction range, explosion knockback resistance, fall damage multiplier, flying speed, follow range, generic armor, generic armor toughness, generic attack damage, generic attack knockback, generic attack speed, generic burning time, generic explosion knockback resistance, generic fall damage multiplier, generic flying speed, generic follow range, generic gravity, generic jump strength, generic knockback resistance, generic luck, generic max absorption, generic max health, generic movement efficiency, generic movement speed, generic oxygen bonus, generic safe fall distance, generic scale, generic step height, generic tempt range, generic water movement efficiency, gravity, horse jump strength, jump strength, knockback resistance, luck, max absorption, max health, mining efficiency, movement efficiency, movement speed, oxygen bonus, player block break speed, player block interaction range, player entity interaction range, player mining efficiency, player sneaking speed, player submerged mining speed, player sweeping damage ratio, safe fall distance, scale, sneaking speed, spawn reinforcements, step height, submerged mining speed, sweeping damage ratio, tempt range, water movement efficiency, zombie spawn reinforcements
+	Since:
+	2.5
+	Represents the type of an attribute. Note that this type does not contain any numerical values.See attribute types for more info. NOTE: Minecraft namespaces are supported, ex: 'minecraft:generic.attack_damage'.
+
+
+Examples:
+Missing examples.
+
+
+Biome
+🔗
+Type
+
+
+Patterns:
+	* badlands, badlands forest, bamboo jungle, basalt deltas, beach, birch forest, black forest, cherry grove, cold beach, cold ocean, cold taiga, crimson forest, dark forest, deep cold ocean, deep dark, deep frozen ocean, deep lukewarm ocean, deep ocean, desert, dripstone caves, end barrens, end highlands, end midlands, eroded badlands, eroded mesa, flower forest, forest, frozen ocean, frozen peaks, frozen river, giant spruce taiga, giant tree taiga, gravelly mountains, grove, hell, ice plains spikes, ice plains with spikes, ice spikes, jagged peaks, jungle, jungle edge, lukewarm ocean, lush caves, mangrove swamp, marsh, meadow, mesa, mesa forest, mountains, mushroom fields, mushroom island, nether, nether wastes, ocean, old growth birch forest, old growth pine taiga, old growth spruce taiga, plains, river, roofed forest, savanna, savanna plateau, sea, shattered savanna, sky, small end islands, snowy beach, snowy plains, snowy slopes, snowy taiga, snowy tundra, soul sand valley, sparse jungle, spiked ice plains, stone shore, stony peaks, stony shore, sunflower plains, swamp, swampland, taiga, tall birch forest, the end, the void, void, warm ocean, warped forest, windswept forest, windswept gravelly hills, windswept hills, windswept savanna, wooded badlands, wooded mesa, wooded mountains
+	Since:
+	1.4.4
+	All possible biomes Minecraft uses to generate a world. NOTE: Minecraft namespaces are supported, ex: 'minecraft:basalt_deltas'.
+
+
+Examples:
+biome at the player is desert
+
+
+Block
+🔗
+Type
+
+
+Patterns:
+	* Missing patterns.
+	Since:
+	1.0
+	A block in a world. It has a location and a type, and can also have a direction (mostly a facing), an inventory, or other special properties.
+
+
+Examples:
+Missing examples.
+
+
+Block Data
+🔗
+Type
+
+
+Patterns:
+	* Missing patterns.
+	Since:
+	2.5
+	Block data is the detailed information about a block, referred to in Minecraft as BlockStates, allowing for the manipulation of different aspects of the block, including shape, waterlogging, direction the block is facing, and so much more. Information regarding each block's optional data can be found on Minecraft's Wiki. Find the block you're looking for and scroll down to 'Block States'. Different states must be separated by a semicolon (see examples). The 'minecraft:' namespace is optional, as well as are underscores.
+
+
+Examples:
+set block at player to campfire[lit=false]
+set target block of player to oak stairs[facing=north;waterlogged=true]
+set block at player to grass_block[snowy=true]
+set loop-block to minecraft:chest[facing=north]
+set block above player to oak_log[axis=y]
+set target block of player to minecraft:oak_leaves[distance=2;persistent=false]
+
+
+Boolean
+🔗
+Type
+
+
+Patterns:
+	* true/yes/on or false/no/off
+	Since:
+	1.0
+	A boolean is a value that is either true or false. Other accepted names are 'on' and 'yes' for true, and 'off' and 'no' for false.
+
+
+Examples:
+set {config.%player%.use mod} to false
+
+
+Cat Type
+🔗
+Type
+
+
+Patterns:
+	* all black, black, british shorthair, calico, jellie, persian, ragdoll, red, siamese, tabby, white
+	Since:
+	2.4
+	Requirements:
+	Minecraft 1.14 or newer
+	Represents the race/type of a cat entity. NOTE: Minecraft namespaces are supported, ex: 'minecraft:british_shorthair'.
+
+
+Examples:
+Missing examples.
+
+
+Chunk
+🔗
+Type
+
+
+Patterns:
+	* Missing patterns.
+	Since:
+	2.0
+	A chunk is a cuboid of 16×16×128 (x×z×y) blocks. Chunks are spread on a fixed rectangular grid in their world.
+
+
+Examples:
+Missing examples.
+
+
+Click Type
+🔗
+Type
+
+
+Patterns:
+	* lmb, number key, mmb, rmb, drop item, drop key, window border using left mouse button, unknown, window border using right mouse, shift+rmb, unsupported, shift+lmb, ctrl+q, swap shield, left mouse button, left mouse with shift, left mouse, 0-9, double click, double click using mouse, border using rmb, right mouse button, right mouse button with shift, border using lmb, middle mouse, drop key with control, window border using right mouse button, swap offhand, custom, q, right mouse with shift, middle mouse button, drop stack, left mouse button with shift, right mouse, creative action
+	Since:
+	2.2-dev16b, 2.2-dev35 (renamed to click type)
+	Click type, mostly for inventory events. Tells exactly which keys/buttons player pressed, assuming that default keybindings are used in client side.
+
+
+Examples:
+Missing examples.
+
+
+Color
+🔗
+Type
+
+
+Patterns:
+	* black, dark grey/dark gray, grey/light grey/gray/light gray/silver, white, blue/dark blue, cyan/aqua/dark cyan/dark aqua, light blue/light cyan/light aqua, green/dark green, light green/lime/lime green, yellow/light yellow, orange/gold/dark yellow, red/dark red, pink/light red, purple/dark purple, magenta/light purple, brown/indigo
+	Since:
+	Unknown
+	Wool, dye and chat colors.
+
+
+Examples:
+color of the sheep is red or black
+set the color of the block to green
+message "You're holding a &amp;amp;amp;amp;amp;amp;lt;%color of tool%&amp;amp;amp;amp;amp;amp;gt;%color of tool%&amp;amp;amp;amp;amp;amp;lt;reset&amp;amp;amp;amp;amp;amp;gt; wool block"
+
+
+Command Sender
+🔗
+Type
+
+
+Patterns:
+	* use the console for the console
+* see player for players.
+	Since:
+	1.0
+	A player or the console.
+
+
+Examples:
+command /push [&amp;amp;amp;amp;amp;amp;amp;lt;player&amp;amp;amp;amp;amp;amp;amp;gt;]:
+    trigger:
+        if arg-1 is not set:
+            if command sender is console:
+                send "You can't push yourself as a console :\" to sender
+                stop
+            push sender upwards with force 2
+            send "Yay!"
+        else:
+            push arg-1 upwards with force 2
+            send "Yay!" to sender and arg-1
+
+
+Damage Cause
+🔗
+Type
+
+
+Patterns:
+	* sweep attack, thorns, the void, magma, a lightning, drowning, dragonfire, an attack, drown, an entity attack, melt, freeze, falling block, contact, fire, campfire, an entity explosion, lightning, a fall, entity explosion, void, a lightning strike, suffocation, suicide, wither effect, a plugin, lightning strike, entity attack, a potion, a wither, sweeping, melting, a falling block, unknown, starvation, lava, fall, hot floor, attack, a block explosion, dryout, burn, hitting wall while flying, potion, world border, flying into a wall, cramming, poison, sonic boom, suffocate, custom, kill, killed, a fire, burning, a projectile, plugin, wither potion effect, block explosion, projectile, wither, dragon's breath
+	Since:
+	2.0
+	The cause/type of a damage event, e.g. lava, fall, fire, drowning, explosion, poison, etc. Please note that support for this type is very rudimentary, e.g. lava, fire and burning, as well as projectile and attack are considered different types.
+
+
+Examples:
+Missing examples.
+
+
+Date
+🔗
+Type
+
+
+Patterns:
+	* Missing patterns.
+	Since:
+	1.4
+	A date is a certain point in the real world's time which can be obtained with now expression, unix date expression and date function. See time and timespan for the other time types of Skript.
+
+
+Examples:
+set {_yesterday} to now
+subtract a day from {_yesterday}
+# now {_yesterday} represents the date 24 hours before now
+
+
+Difficulty
+🔗
+Type
+
+
+Patterns:
+	* normal, medium, hard, easy, peaceful
+	Since:
+	2.3
+	The difficulty of a world.
+
+
+Examples:
+Missing examples.
+
+
+Direction
+🔗
+Type
+
+
+Patterns:
+	* see direction (expression)
+	Since:
+	2.0
+	A direction, e.g. north, east, behind, 5 south east, 1.3 meters to the right, etc. Locations and some blocks also have a direction, but without a length. Please note that directions have changed extensively in the betas and might not work perfectly. They can also not be used as command arguments.
+
+
+Examples:
+set the block below the victim to a chest
+loop blocks from the block infront of the player to the block 10 below the player:
+    set the block behind the loop-block to water
+
+
+Enchantment
+🔗
+Type
+
+
+Patterns:
+	* aqua affinity, bane of arthropods, binding curse, blast protection, breach, channeling, channelling, curse of binding, curse of vanishing, density, depth strider, efficiency, feather falling, fire aspect, fire protection, flame, fortune, frost walker, impaling, infinity, knockback, looting, loyalty, luck of the sea, lure, mending, multi-shot, multishot, piercing, power, projectile protection, protection, punch, quick charge, respiration, riptide, sharpness, silk touch, smite, soul speed, sweeping edge, swift sneak, thorns, unbreaking, vanishing curse, wind burst
+	Since:
+	1.4.6
+	An enchantment, e.g. 'sharpness' or 'fortune'. Unlike enchantment type this type has no level, but you usually don't need to use this type anyway. NOTE: Minecraft namespaces are supported, ex: 'minecraft:basalt_deltas'. As of Minecraft 1.21 this will also support custom enchantments using namespaces, ex: 'myenchants:explosive'.
+
+
+Examples:
+Missing examples.
+
+
+Enchantment Offer
+🔗
+Type
+
+
+Patterns:
+	* Missing patterns.
+	Since:
+	2.5
+	The enchantmentoffer in an enchant prepare event.
+
+
+Examples:
+on enchant prepare:
+    set enchant offer 1 to sharpness 1
+    set the cost of enchant offer 1 to 10 levels
+
+
+Enchantment Type
+🔗
+Type
+
+
+Patterns:
+	* <enchantment> [<level>]
+	Since:
+	1.4.6
+	An enchantment with an optional level, e.g. 'sharpness 2' or 'fortune'.
+
+
+Examples:
+enchant the player's tool with sharpness 5
+helmet is enchanted with waterbreathing
+
+
+Entity
+🔗
+Type
+
+
+Patterns:
+	* player, op, wolf, tamed ocelot, powered creeper, zombie, unsaddled pig, fireball, arrow, dropped item, item frame, etc.
+	Since:
+	1.0
+	An entity is something in a world that's not a block, e.g. a player, a skeleton, or a zombie, but also projectiles like arrows, fireballs or thrown potions, or special entities like dropped items, falling blocks or paintings.
+
+
+Examples:
+entity is a zombie or creeper
+player is an op
+projectile is an arrow
+shoot a fireball from the player
+
+
+Entity Type
+🔗
+Type
+
+
+Patterns:
+	* Detailed usage will be added eventually
+	Since:
+	1.3
+	The type of an entity, e.g. player, wolf, powered creeper, etc.
+
+
+Examples:
+victim is a cow
+spawn a creeper
+
+
+Entity Type with Amount
+🔗
+Type
+
+
+Patterns:
+	* <number> <entity type>
+	Since:
+	1.3
+	An entity type with an amount, e.g. '2 zombies'. I might remove this type in the future and make a more general 'type' type, i.e. a type that has a number and a type.
+
+
+Examples:
+spawn 5 creepers behind the player
+
+
+Experience
+🔗
+Type
+
+
+Patterns:
+	* [<number>] ([e]xp|experience [point[s]])
+	Since:
+	2.0
+	Experience points. Please note that Bukkit only allows to give XP, but not remove XP from players. You can however change a player's level and level progress freely.
+
+
+Examples:
+give 10 xp to the player
+
+
+Firework Effect
+🔗
+Type
+
+
+Patterns:
+	* See Firework Types
+	Since:
+	2.4
+	A configuration of effects that defines the firework when exploded which can be used in the launch firework effect. See the firework effect expression for detailed patterns.
+
+
+Examples:
+launch flickering trailing burst firework colored blue and green at player
+launch trailing flickering star colored purple, yellow, blue, green and red fading to pink at target entity
+launch ball large colored red, purple and white fading to light green and black at player's location with duration 1
+
+
+Firework Type
+🔗
+Type
+
+
+Patterns:
+	* small, ball, star shaped, large, star, creeper face, small ball, large ball, burst, ball large, creeper
+	Since:
+	2.4
+	The type of a fireworkeffect.
+
+
+Examples:
+Missing examples.
+
+
+Game Mode
+🔗
+Type
+
+
+Patterns:
+	* adventure, survival, spectator, creative
+	Since:
+	1.0
+	The game modes survival, creative, adventure and spectator.
+
+
+Examples:
+player's gamemode is survival
+set the player argument's game mode to creative
+
+
+Gamerule
+🔗
+Type
+
+
+Patterns:
+	* tntExplosionDropDecay, globalSoundEvents, enderPearlsVanishOnDeath, doFireTick, maxCommandChainLength, doVinesSpread, disableElytraMovementCheck, lavaSourceConversion, commandBlockOutput, forgiveDeadPlayers, playersNetherPortalCreativeDelay, doMobSpawning, maxEntityCramming, universalAnger, playersSleepingPercentage, snowAccumulationHeight, doImmediateRespawn, blockExplosionDropDecay, naturalRegeneration, doMobLoot, fallDamage, doEntityDrops, randomTickSpeed, playersNetherPortalDefaultDelay, spawnRadius, freezeDamage, sendCommandFeedback, doWardenSpawning, fireDamage, reducedDebugInfo, waterSourceConversion, projectilesCanBreakBlocks, announceAdvancements, drowningDamage, spawnChunkRadius, disableRaids, doWeatherCycle, mobExplosionDropDecay, doDaylightCycle, showDeathMessages, doTileDrops, doInsomnia, keepInventory, disablePlayerMovementCheck, doLimitedCrafting, mobGriefing, doTraderSpawning, commandModificationBlockLimit, logAdminCommands, minecartMaxSpeed, spectatorsGenerateChunks, doPatrolSpawning, maxCommandForkCount
+	Since:
+	2.5
+	Requirements:
+	Minecraft 1.13 or newer
+	A gamerule
+
+
+Examples:
+Missing examples.
+
+
+Gamerule Value
+🔗
+Type
+
+
+Patterns:
+	* Missing patterns.
+	Since:
+	2.5
+	A wrapper for the value of a gamerule for a world.
+
+
+Examples:
+Missing examples.
+
+
+Gene
+🔗
+Type
+
+
+Patterns:
+	* normal, lazy, happy, worried, worrisome, aggressive, brown, brownish, savage, playful, wild, weak
+	Since:
+	2.4
+	Requirements:
+	Minecraft 1.14 or newer
+	Represents a Panda's main or hidden gene. See genetics for more info.
+
+
+Examples:
+Missing examples.
+
+
+Heal Reason
+🔗
+Type
+
+
+Patterns:
+	* an ender crystal, magic, a magic regeneration, magic regeneration, fed, sated, a magic regen, regen potion, a wither spawn, peaceful, unknown, a regeneration potion, consuming, a wither effect, peaceful regeneration, wither summoning, healing potion, wither potion, an end crystal, satiated, regeneration potion, potion, satisfied, ingesting, withered, custom, a wither spawning, end crystal, eating, wither spawning, a wither summoning, wither effect, a plugin, a regen potion, plugin, withering, a potion, wither spawn, a healing potion, ender crystal, magic regen, wither, peaceful regen
+	Since:
+	2.5
+	The health regain reason in a heal event.
+
+
+Examples:
+Missing examples.
+
+
+Inventory
+🔗
+Type
+
+
+Patterns:
+	* Missing patterns.
+	Since:
+	1.0
+	An inventory of a player or block. Inventories have many effects and conditions regarding the items contained. An inventory has a fixed amount of slots which represent a specific place in the inventory, e.g. the helmet slot for players (Please note that slot support is still very limited but will be improved eventually).
+
+
+Examples:
+Missing examples.
+
+
+Inventory Action
+🔗
+Type
+
+
+Patterns:
+	* drop stack from slot, swap items with hotbar, swap cursor stack, pickup single item, pickup some, drop all from cursor, move to other inventory, drop cursor stack, pickup all, swap with hotbar, nothing, drop all from slot, swap cursor, drop cursor, pickup all items, drop slot item, place all, drop cursor item, drop slot stack, drop single item from slot, swap with cursor, place some, pickup one item, drop single item from cursor, collect items to cursor, unknown, clone stack, drop stack from cursor, drop one item from slot, drop one item from cursor, unsupported, do nothing, drop one from cursor, pickup half, drop items from slot, swap stack with cursor, place all items, collect to cursor, pickup some items, drop slot, drop items from cursor, hotbar move and readd, shift move, custom, pickup single, place one item, hotbar swap items, drop one from slot, place some items, place one, pickup half stack, instant move, hotbar swap
+	Since:
+	2.2-dev16
+	What player just did in inventory event. Note that when in creative game mode, most actions do not work correctly.
+
+
+Examples:
+Missing examples.
+
+
+Inventory Close Reasons
+🔗
+Type
+
+
+Patterns:
+	* disconnect, death, teleport, cannot use, new opened, unknown, can't use, unloaded, disconnected, plugin, can not use, open new, player
+	Since:
+	2.8.0
+	Requirements:
+	Paper
+	The inventory close reason in an inventory close event.
+
+
+Examples:
+Missing examples.
+
+
+Inventory Type
+🔗
+Type
+
+
+Patterns:
+	* barrel inventory, a loom inventory, a blast furnace inventory, workbench inventory, ender chest inventory, loom inventory, a workbench inventory, hopper inventory, a merchant inventory, a hopper inventory, chiseled bookshelf, an ender chest inventory, new smithing table, bookshelf, a jukebox, beacon inventory, shulker box inventory, a barrel inventory, a shulker box inventory, lectern inventory, chest inventory, a villager inventory, a smoker inventory, a brewing stand inventory, a smithing inventory, grindstone inventory, a crafter inventory, a crafting table inventory, a player inventory, decorated pot, furnace inventory, a creative inventory, blast furnace inventory, upgrade gear, a composter inventory, an enchanting table inventory, jukebox, a dropper inventory, a cartography table inventory, a upgrade gear, smoker inventory, composter inventory, a chest inventory, upgrade gear table, a upgrade gear table, dispenser inventory, player inventory, stonecutter inventory, a stonecutter inventory, a decorated pot, a lectern inventory, merchant inventory, cartography table inventory, a chiseled bookshelf, a new smithing table, a furnace inventory, anvil inventory, a dispenser inventory, a grindstone inventory, smithing inventory, dropper inventory, brewing stand inventory, villager inventory, enchanting table inventory, a beacon inventory, a bookshelf, crafter inventory, creative inventory, crafting table inventory, an anvil inventory
+	Since:
+	2.2-dev32
+	Minecraft has several different inventory types with their own use cases.
+
+
+Examples:
+Missing examples.
+
+
+Item
+🔗
+Type
+
+
+Patterns:
+	* [<number> [of]] <alias> [of <enchantment> <level>], Where <alias> must be an alias that represents exactly one item (i.e cannot be a general alias like 'sword' or 'plant')
+	Since:
+	1.0
+	An item, e.g. a stack of torches, a furnace, or a wooden sword of sharpness 2. Unlike item type an item can only represent exactly one item (e.g. an upside-down cobblestone stair facing west), while an item type can represent a whole range of items (e.g. any cobble stone stairs regardless of direction). You don't usually need this type except when you want to make a command that only accepts an exact item. Please note that currently 'material' is exactly the same as 'item', i.e. can have an amount & enchantments.
+
+
+Examples:
+set {_item} to type of the targeted block
+{_item} is a torch
+
+
+Item Type
+🔗
+Type
+
+
+Patterns:
+	* [<number> [of]] [all/every] <alias> [of <enchantment> [<level>] [,/and <more enchantments...>]]
+	Since:
+	1.0
+	An item type is an alias, e.g. 'a pickaxe', 'all plants', etc., and can result in different items when added to an inventory, and unlike items they are well suited for checking whether an inventory contains a certain item or whether a certain item is of a certain type. An item type can also have one or more enchantments with or without a specific level defined, and can optionally start with 'all' or 'every' to make this item type represent all types that the alias represents, including data ranges.
+
+
+Examples:
+give 4 torches to the player
+add all slabs to the inventory of the block
+player's tool is a diamond sword of sharpness
+remove a pickaxes of fortune 4 from {stored items::*}
+set {_item} to 10 of every upside-down stair
+block is dirt or farmland
+
+
+Living Entity
+🔗
+Type
+
+
+Patterns:
+	* see entity, but ignore inanimate objects
+	Since:
+	1.0
+	A living entity, i.e. a mob or player, not inanimate entities like projectiles or dropped items.
+
+
+Examples:
+spawn 5 powered creepers
+shoot a zombie from the creeper
+
+
+Location
+🔗
+Type
+
+
+Patterns:
+	* Missing patterns.
+	Since:
+	1.0
+	A location in a world. Locations are world-specific and even store a direction, e.g. if you save a location and later teleport to it you will face the exact same direction you did when you saved the location.
+
+
+Examples:
+Missing examples.
+
+
+Metadata Holder
+🔗
+Type
+
+
+Patterns:
+	* Missing patterns.
+	Since:
+	2.2-dev36
+	Something that can hold metadata (e.g. an entity or block)
+
+
+Examples:
+set metadata value "super cool" of player to true
+
+
+Money
+🔗
+Type
+
+
+Patterns:
+	* <number> $ or $ <number>, where '$' is your server's currency, e.g. '10 rupees' or '£5.00'
+	Since:
+	2.0
+	Requirements:
+	Vault, an economy plugin that supports Vault
+	A certain amount of money. Please note that this differs from numbers as it includes a currency symbol or name, but usually the two are interchangeable, e.g. you can both add 100$ to the player's balance and add 100 to the player's balance.
+
+
+Examples:
+add 10£ to the player's account
+remove Fr. 9.95 from the player's money
+set the victim's money to 0
+increase the attacker's balance by the level of the victim * 100
+
+
+Moon Phase
+🔗
+Type
+
+
+Patterns:
+	* last quarter, waning crescent, waxing gibbous, full moon, waning gibbous, waxing crescent, new moon, first quarter
+	Since:
+	2.7
+	Requirements:
+	Paper 1.16+
+	Represents the phase of a moon.
+
+
+Examples:
+Missing examples.
+
+
+Number
+🔗
+Type
+
+
+Patterns:
+	* [-]###[.###] (any amount of digits; very large numbers will be truncated though)
+	Since:
+	1.0
+	A number, e.g. 2.5, 3, or -9812454. Please note that many expressions only need integers, i.e. will discard any fractional parts of any numbers without producing an error.
+
+
+Examples:
+set the player's health to 5.5
+set {_temp} to 2*{_temp} - 2.5
+
+
+Object
+🔗
+Type
+
+
+Patterns:
+	* Missing patterns.
+	Since:
+	1.0
+	The supertype of all types, meaning that if %object% is used in e.g. a condition it will accept all kinds of expressions.
+
+
+Examples:
+Missing examples.
+
+
+Offline Player
+🔗
+Type
+
+
+Patterns:
+	* Parsing an offline player as a player (online) will return nothing (none), for that case you would need to parse as offlineplayer which only returns nothing (none) if player doesn't exist in Minecraft databases (name not taken) otherwise it will return the player regardless of their online status.
+	Since:
+	2.0 beta 8
+	A player that is possibly offline. See player for more information. Please note that while all effects and conditions that require a player can be used with an offline player as well, they will not work if the player is not actually online.
+
+
+Examples:
+set {_p} to "Notch" parsed as an offlineplayer # returns Notch even if they're offline
+
+
+Player
+🔗
+Type
+
+
+Patterns:
+	* Parsing an offline player as a player (online) will return nothing (none), for that case you would need to parse as offlineplayer which only returns nothing (none) if player doesn't exist in Minecraft databases (name not taken) otherwise it will return the player regardless of their online status.
+	Since:
+	1.0
+	A player. Depending on whether a player is online or offline several actions can be performed with them, though you won't get any errors when using effects that only work if the player is online (e.g. changing their inventory) on an offline player. You have two possibilities to use players as command arguments: <player> and <offline player>. The first requires that the player is online and also accepts only part of the name, while the latter doesn't require that the player is online, but the player's name has to be entered exactly.
+
+
+Examples:
+set {_p} to "Notch" parsed as a player # returns &amp;amp;amp;amp;amp;amp;lt;none&amp;amp;amp;amp;amp;amp;gt; unless Notch is actually online or starts with Notch like Notchan
+set {_p} to "N" parsed as a player # returns Notch if Notch is online because their name starts with 'N' (case insensitive) however, it would return nothing if no player whose name starts with 'N' is online.
+
+
+Potion Effect
+🔗
+Type
+
+
+Patterns:
+	* speed of tier 1 for 10 seconds
+	Since:
+	2.5.2
+	A potion effect, including the potion effect type, tier and duration.
+
+
+Examples:
+Missing examples.
+
+
+Potion Effect Type
+🔗
+Type
+
+
+Patterns:
+	* null, speed, slowness, haste, mining fatigue, strength, instant health, instant damage, jump boost, nausea, regeneration, resistance, fire resistance, water breathing, invisibility, blindness, night vision, hunger, weakness, poison, wither, health boost, absorption, saturation, glowing, levitation, luck, bad luck, slow falling, conduit power, dolphins grace, bad omen, hero of the village, darkness, trial omen, bad omen, wind charged, weaving, oozing, infested
+	Since:
+	Unknown
+	A potion effect type, e.g. 'strength' or 'swiftness'.
+
+
+Examples:
+apply swiftness 5 to the player
+apply potion of speed 2 to the player for 60 seconds
+remove invisibility from the victim
+
+
+Projectile
+🔗
+Type
+
+
+Patterns:
+	* arrow, fireball, snowball, thrown potion, etc.
+	Since:
+	1.0
+	A projectile, e.g. an arrow, snowball or thrown potion.
+
+
+Examples:
+projectile is a snowball
+shoot an arrow at speed 5 from the player
+
+
+Quit Reason
+🔗
+Type
+
+
+Patterns:
+	* disconnected, erroneous state, kicked, quit, timed out, erroneous
+	Since:
+	2.8.0
+	Requirements:
+	Paper 1.16.5+
+	Represents a quit reason from a player quit server event.
+
+
+Examples:
+Missing examples.
+
+
+Region
+🔗
+Type
+
+
+Patterns:
+	* "region name"
+	Since:
+	2.1
+	Requirements:
+	Supported regions plugin
+	A region of a regions plugin. Skript currently supports WorldGuard, Factions, GriefPrevention and PreciousStones. Please note that some regions plugins do not have named regions, some use numerical ids to identify regions, and some may have regions with the same name in different worlds, thus using regions like "region name" in scripts may or may not work.
+
+
+Examples:
+Missing examples.
+
+
+Resource Pack State
+🔗
+Type
+
+
+Patterns:
+	* discarded, refused, rejected, failed reload, accepted, failed, failed to reload, failed to download, downloaded, successfully loaded, accept, fail, successfully load, refuse, declined, successfully install, success, reject, decline, successfully installed, download fail, invalid url
+	Since:
+	2.4
+	The state in a resource pack request response event.
+
+
+Examples:
+Missing examples.
+
+
+Server Icon
+🔗
+Type
+
+
+Patterns:
+	* Missing patterns.
+	Since:
+	2.3
+	A server icon that was loaded using the load server icon effect.
+
+
+Examples:
+Missing examples.
+
+
+Slot
+🔗
+Type
+
+
+Patterns:
+	* Missing patterns.
+	Since:
+	Unknown
+	Represents a single slot of an inventory. Notable slots are the armour slots and furnace slots. The most important property that distinguishes a slot from an item is its ability to be changed, e.g. it can be set, deleted, enchanted, etc. (Some item expressions can be changed as well, e.g. items stored in variables. For that matter: slots are never saved to variables, only the items they represent at the time when the variable is set). Please note that tool can be regarded a slot, but it can actually change it's position, i.e. doesn't represent always the same slot.
+
+
+Examples:
+set tool of player to dirt
+delete helmet of the victim
+set the color of the player's tool to green
+enchant the player's chestplate with projectile protection 5
+
+
+Sound Category
+🔗
+Type
+
+
+Patterns:
+	* hostile creatures category, speech category, records category, friendly creature category, noteblock category, hostile creature category, note block category, voice category, ambient category, noteblocks category, note blocks category, weather category, block category, friendly mob category, jukebox category, hostile mob category, master category, master volume category, hostile category, record category, blocks category, environment category, jukeboxes category, player category, players category, hostile mobs category, friendly mobs category, music category, friendly creatures category, neutral category
+	Since:
+	2.4
+	The category of a sound, they are used for sound options of Minecraft. See the play sound and stop sound effects.
+
+
+Examples:
+Missing examples.
+
+
+Spawn Reason
+🔗
+Type
+
+
+Patterns:
+	* dispense egg, egg, village defense, ocelot baby, silverfish trap, village invading, trap, dispensing egg, shoulder, drowned, metamorphosis, lightning, silverfish reveal, spell, built iron golem, natural, trial mob spawner, village invasion, frozen, mount, build wither, built wither, iron golem defense, ender pearl, creature spawner, reinforcements, build snowman, build iron golem, breeding, raid, ominous item spawner, infection, customized, potion effect, spawn egg, jockey, beehive, default, golem defense, patrol, slime split, infected, sheared, mob spawner, nether portal, trial spawner, shear, perching, custom, built snowman, chunk generation, breed, command, duplication, explosion, spawner, cured, enchantment, trial creature spawner, customised, piglin zombification
+	Since:
+	2.3
+	The spawn reason in a spawn event.
+
+
+Examples:
+Missing examples.
+
+
+Teleport Cause
+🔗
+Type
+
+
+Patterns:
+	* bed exit, nether portal, ender gateway, exiting bed, chorus fruit, ender portal, command, unknown, plugin, dismounted, ender pearl, spectator, spectate, end gateway, chorus, exit bed, gateway, dismount, end portal
+	Since:
+	2.2-dev35
+	The teleport cause in a teleport event.
+
+
+Examples:
+Missing examples.
+
+
+Text
+🔗
+Type
+
+
+Patterns:
+	* simple: "..."
+* quotes: "...""..."
+* expressions: "...%expression%..."
+* percent signs: "...%%..."
+	Since:
+	1.0
+	Text is simply text, i.e. a sequence of characters, which can optionally contain expressions which will be replaced with a meaningful representation (e.g. %player% will be replaced with the player's name). Because scripts are also text, you have to put text into double quotes to tell Skript which part of the line is an effect/expression and which part is the text. Please read the article on Texts and Variable Names to learn more.
+
+
+Examples:
+broadcast "Hello World!"
+message "Hello %player%"
+message "The id of ""%type of tool%"" is %id of tool%."
+
+
+Time
+🔗
+Type
+
+
+Patterns:
+	* ##:##
+* ##[:##][ ]am/pm
+	Since:
+	1.0
+	A time is a point in a minecraft day's time (i.e. ranges from 0:00 to 23:59), which can vary per world. See date and timespan for the other time types of Skript.
+
+
+Examples:
+at 20:00:
+    time is 8 pm
+    broadcast "It's %time%"
+
+
+Timeperiod
+🔗
+Type
+
+
+Patterns:
+	* ##:## - ##:##
+* dusk/day/dawn/night
+	Since:
+	1.0
+	A period of time between two times. Mostly useful since you can use this to test for whether it's day, night, dusk or dawn in a specific world. This type might be removed in the future as you can use 'time of world is between x and y' as a replacement.
+
+
+Examples:
+time in world is night
+
+
+Timespan
+🔗
+Type
+
+
+Patterns:
+	* <number> [minecraft/mc/real/rl/irl] ticks/seconds/minutes/hours/days/weeks/months/years [[,/and] <more...>]
+* [###:]##:##[.####] ([hours:]minutes:seconds[.milliseconds])
+	Since:
+	1.0, 2.6.1 (weeks, months, years)
+	A timespan is a difference of two different dates or times, e.g '10 minutes'. Timespans are always displayed as real life time, but can be defined as minecraft time, e.g. '5 minecraft days and 12 hours'. NOTE: Months always have the value of 30 days, and years of 365 days. See date and time for the other time types of Skript.
+
+
+Examples:
+every 5 minecraft days:
+    wait a minecraft second and 5 ticks
+every 10 mc days and 12 hours:
+    halt for 12.7 irl minutes, 12 hours and 120.5 seconds
+
+
+Transform Reason
+🔗
+Type
+
+
+Patterns:
+	* infection, magma slime split, villager infection, tadpole metamorphosis, drowning, creeper super charge, unknown, split, tadpole converting, metamorphosis, skeleton converting to stray, lightning, slime split, entity drowning, slime splitting, zombie drowning, zombie curing, skeleton freeze, entity freezing, zombie converting to drowned, curing, entity freeze, skeleton freezing, mooshroom shear, zombie cure, tadpole converting to frog, mooshroom shearing, magma slime splitting, piglin zombification
+	Since:
+	2.8.0
+	Represents a transform reason of an entity transform event.
+
+
+Examples:
+Missing examples.
+
+
+Tree Type
+🔗
+Type
+
+
+Patterns:
+	* [any] <general tree/mushroom type>, e.g. tree/any jungle tree/etc.
+* <specific tree/mushroom species>, e.g. red mushroom/small jungle tree/big regular tree/etc.
+	Since:
+	Unknown
+	A tree type represents a tree species or a huge mushroom species. These can be generated in a world with the generate tree effect.
+
+
+Examples:
+grow any regular tree at the block
+grow a huge red mushroom above the block
+
+
+Type
+🔗
+Type
+
+
+Patterns:
+	* See the type name patterns of all types - including this one
+	Since:
+	2.0
+	Represents a type, e.g. number, object, item type, location, block, world, entity type, etc. This is mostly used for expressions like 'event-<type>', '<type>-argument', 'loop-<type>', etc., e.g. event-world, number-argument and loop-player.
+
+
+Examples:
+{variable} is a number # check whether the variable contains a number, e.g. -1 or 5.5
+{variable} is a type # check whether the variable contains a type, e.g. number or player
+{variable} is an object # will always succeed if the variable is set as everything is an object, even types.
+disable PvP in the event-world
+kill the loop-entity
+
+
+Vector
+🔗
+Type
+
+
+Patterns:
+	* vector(x, y, z)
+	Since:
+	2.2-dev23
+	Vector is a collection of numbers. In Minecraft, 3D vectors are used to express velocities of entities.
+
+
+Examples:
+Missing examples.
+
+
+Visual Effect
+🔗
+Type
+
+
+Patterns:
+	* smoke, potion break, ender signal, mobspawner flames, arrow particles, jumping rabbit, hurt, wolf smoke, wolf hearts, wolf shaking, sheep eating, iron golem offering rose, witch magic, zombie turning to a villager, firework explosion, love hearts, squid rotation reset, entity poof, guardian target, block with shield, shield break, armor stand hit, hurt by thorns, iron golem sheathing rose, resurrection by totem, hurt by drowning, hurt by explosion, poof, large explosion, explosion emitter, firework, bubble, splash, water wake, underwater, critical hit, enchanted hit, smoke, large smoke, effect, instant effect, entity effect, witch, dripping water, dripping lava, angry villager, happy villager, mycelium, note, portal, enchant, flame, lava pop, cloud, dust, snowball, slime, heart, item, block, rain, elder guardian, dragon breath, end rod, damage indicator, sweep attack, falling dust, totem of undying, spit, squid ink, bubble pop, current down, bubble column up, nautilus, dolphin, sneeze, campfire cosy smoke, campfire signal smoke, composter, flash, falling lava, landing lava, falling water, dripping honey, falling honey, landing honey, falling nectar, soul fire flame, ash, crimson spore, warped spore, soul, dripping obsidian tear, falling obsidian tear, landing obsidian tear, reverse portal, white ash, dust color transition, vibration, falling spore blossom, spore blossom air, small flame, snowflake, dripping dripstone lava, falling dripstone lava, dripping dripstone water, falling dripstone water, glow squid ink, glow, wax on, wax off, electric spark, scrape, sonic boom, sculk soul, sculk charge, sculk charge pop, shriek, cherry leaves, egg crack, dust plume, white smoke, gust, small gust, large gust emitter, small gust emitter, trial spawner detection, ominous trial spawner detection, vault connection, infested, cobweb, dust pillar, ominous spawning, raid omen, block marker
+	Since:
+	2.1
+	A visible effect, e.g. particles.
+
+
+Examples:
+show wolf hearts on the clicked wolf
+play mob spawner flames at the targeted block to the player
+
+
+Weather Type
+🔗
+Type
+
+
+Patterns:
+	* clear/sun/sunny, rain/rainy/raining, and thunder/thundering/thunderstorm
+	Since:
+	1.0
+	The weather types sunny, rainy, and thundering.
+
+
+Examples:
+is raining
+is sunny in the player's world
+message "It is %weather in the argument's world% in %world of the argument%"
+
+
+World
+🔗
+Type
+
+
+Patterns:
+	* "world_name", e.g. "world"
+	Since:
+	1.0, 2.2 (alternate syntax)
+	One of the server's worlds. Worlds can be put into scripts by surrounding their name with double quotes, e.g. "world_nether", but this might not work reliably as text uses the same syntax.
+
+
+Examples:
+broadcast "Hello!" to the world "world_nether"
+
+
+World Environment
+🔗
+Type
+
+
+Patterns:
+	* normal, nether, the end, the overworld, custom, the nether, end, overworld
+	Since:
+	2.7
+	Represents the environment of a world.
+
+
+Examples:
+Missing examples.
